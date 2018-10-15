@@ -84,12 +84,18 @@ static int str_split(char* str, const char* delim, const char* tokens[] ) {
 
 static const char *key_mongo2asterisk(const char *key)
 {
-    return strcmp(key, "_id") == 0 ? "id" : key;
+    //ŁATA POZWALAJĄCA NA WYKORZYSTANIE WŁASNEGO POLA JAKO IDENTYFIKATORA
+    //PRZEROBIĆ NA PARAMETR Z PLIKU
+    return key;
+    //return strcmp(key, "_id") == 0 ? "id" : key;
 }
 
 static const char *key_asterisk2mongo(const char *key)
 {
-    return strcmp(key, "id") == 0 ? "_id" : key;
+    //ŁATA POZWALAJĄCA NA WYKORZYSTANIE WŁASNEGO POLA JAKO IDENTYFIKATORA
+    //PRZEROBIĆ NA PARAMETR Z PLIKU
+    return key;
+    //return strcmp(key, "id") == 0 ? "_id" : key;
 }
 
 /*!
